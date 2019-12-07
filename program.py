@@ -17,13 +17,13 @@ class WindowsGui(Frame):
         self.phone_number = Entry(top_frame, width=25)
         self.phone_number.pack(side=LEFT)
 
-        self.open_whatsapp_button = Button(bottom_frame, text="Open Chat", command=self.open_chat)
+        self.open_whatsapp_button = Button(bottom_frame, text="Open Chat ", command=self.open_final_chat)
         self.open_whatsapp_button.pack()
 
         self.phone_text = Label(bottom_frame, text="Example: 0512345678 or 051-12345678", fg="grey")
         self.phone_text.pack()
 
-    def open_chat(self):
+    def open_final_chat(self):
         number = self.phone_number.get()
         number = str(number).replace('-', '')
         url = "https://wa.me/" + "972" + number
@@ -33,7 +33,7 @@ class WindowsGui(Frame):
 root = Tk()
 
 root.title("Anonymous whatsApp chat")
-root.geometry("300x100")
+root.geometry("300x130")
 root.resizable(False, False)
 win_gui = WindowsGui(root)
 win_gui.pack()
