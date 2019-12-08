@@ -22,6 +22,9 @@ class WindowsGui(Frame):
 
         self.phone_text = Label(bottom_frame, text="Example: 0512345678 or 051-12345678", fg="grey")
         self.phone_text.pack()
+        
+        self.credits = Label(bottom_frame, text="Built by Ilia Naleva", fg="grey")
+        self.credits.pack()
 
         self.credits = Label(bottom_frame, text="Built by Ilia Naleva", fg="grey")
         self.credits.pack()
