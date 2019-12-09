@@ -26,9 +26,6 @@ class WindowsGui(Frame):
         self.credits = Label(bottom_frame, text="Built by Ilia Naleva", fg="grey")
         self.credits.pack()
 
-        self.credits = Label(bottom_frame, text="Built by Ilia Naleva", fg="grey")
-        self.credits.pack()
-
     def open_chat_btn(self):
         number = self.phone_number.get()
         number = str(number).replace('-', '')
@@ -40,9 +37,6 @@ class WindowsGui(Frame):
         number = str(number).replace('-', '')
         url = "https://wa.me/" + "972" + number
         webbrowser.open_new_tab(url)
-
-
-
 
 root = Tk()
 
